@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,sum=0,x=4;
+    cin >> n;
+    char p[n][x];
+    while(n!=0){
+        cin >> p[n];
+        if(p[n][1]=='+')
+            sum++;
+        else 
+            sum--;
+        n--;
+    }
+    cout << sum;
+}
