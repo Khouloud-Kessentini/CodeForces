@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    short int t,a,b;
+    cin >> t;
+    int sum=0;
+    while(t!=0){
+        cin >> a >> b;
+        if(b-a>=2){
+            sum++;
+        }
+        t--;
+    }
+    cout << sum;
+}
