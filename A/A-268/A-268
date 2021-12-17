@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	short int n, sum=0, i, j;
+	cin >> n;
+	short int tab[2*n];
+	for(i=0;i<2*n;i++){
+		cin >> tab[i];
+	}
+	for(i=0;i<2*n;i+=2){
+		for(j=1;j<2*n;j+=2){
+			if(tab[i]==tab[j])
+				sum++;
+		}		
+	}
+	cout << sum;
+}
