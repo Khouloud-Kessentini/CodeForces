@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	short int n=5,p,sum=0;
+	while(n--){
+		cin >> p;
+		sum+=p;
+	}
+	if(sum%5==0&&sum>0)
+		cout << sum/5;
+	else 
+		cout << -1;
+}
