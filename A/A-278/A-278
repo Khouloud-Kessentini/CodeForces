@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    short int n,i,s,t,aux;
+    int sum1=0,sum2=0;
+    cin >> n;
+    short int tab[n];
+    for(i=1;i<n+1;i++){
+        cin >> tab[i];
+        sum2+=tab[i];
+    }
+    cin >> s >> t;
+    if(s>t){
+        aux=s;
+        s=t;
+        t=aux;
+    }
+    for(i=s;i<t;i++){
+        sum1+=tab[i];
+    }
+    sum2-=sum1;
+    cout << min(sum1,sum2);
+}
