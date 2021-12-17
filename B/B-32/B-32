@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	char tab[200],s[200];
+	int i=0,j=0;
+	cin >> tab;
+	while(i<strlen(tab)){
+		if(tab[i]=='.'){
+			s[j]='0'; 
+			j++;
+			i++;
+		}
+		else if(tab[i]=='-'){
+			if(tab[i+1]=='.'){
+				s[j]='1';
+				j++;
+				i+=2;
+			}
+			else if(tab[i+1]=='-'){
+				s[j]='2';
+				j++;
+				i+=2;
+			}
+		}
+	}
+	cout << string(s).substr(0,j);
+}
