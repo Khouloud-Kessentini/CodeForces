@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n;
+	cin >> n;
+	int f,inches, cm;
+	inches = n/3;
+	cm = n%3;
+	if(cm>1)
+		++inches;
+	f = inches/12;
+	inches%=12;
+	cout << f << "  " << inches;
+}
