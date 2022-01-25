@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	short int t, n;
+	bool b = false;
+	cin >> t;
+	while(t--){
+		cin >> n;
+		if(n>0){
+			cout << "HARD\n" ;
+			b = true;
+			break;
+		}
+	}
+	if(b == false){
+		cout << "EASY\n";
+	}
+}
