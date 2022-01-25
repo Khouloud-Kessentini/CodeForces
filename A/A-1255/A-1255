@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	short int t;
+	int volume, required_volume;
+	cin >> t;
+	while(t--){
+		cin >> volume >> required_volume;
+		cout << abs((volume-required_volume)/5 + ((volume-required_volume)%5)/2 + ((volume-required_volume)%5)%2) << endl;
+	}
+}
