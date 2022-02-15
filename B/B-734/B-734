@@ -1,0 +1,9 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int k2, k3, k5, k6, nb_256, nb_32;
+    cin >> k2 >> k3 >> k5 >>k6;
+    nb_256  = min(k2,min(k5,k6)) ;
+    nb_32 = min(k3,k2-nb_256);
+    cout << nb_256*256 + nb_32*32;
+}
