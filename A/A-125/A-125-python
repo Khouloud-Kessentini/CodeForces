@@ -1,0 +1,8 @@
+n = int(input())
+inches = n/3
+cm = n%3
+if (cm>1):
+    inches+=1
+f = inches/12
+inches %= 12
+print(int(f)," ",int(inches))
