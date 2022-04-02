@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-	int n;
+	short int n;
 	cin >> n;
-	int f,inches, cm;
+	short int f,inches, cm;
 	inches = n/3;
 	cm = n%3;
 	if(cm>1)
