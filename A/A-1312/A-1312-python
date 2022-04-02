@@ -1,0 +1,6 @@
+for _ in range (int(input())):
+    n,m = input().split(' ')
+    if (int(n) % int(m) == 0):
+        print ("YES\n")
+    else:
+        print ("NO\n")
