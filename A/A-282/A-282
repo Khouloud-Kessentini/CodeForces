@@ -2,16 +2,12 @@
 using namespace std;
 int main()
 {
-    int n,sum=0,x=4;
+    short int n,sum=0,x=3;
     cin >> n;
     char p[n][x];
-    while(n!=0){
+    while(n--){
         cin >> p[n];
-        if(p[n][1]=='+')
-            sum++;
-        else 
-            sum--;
-        n--;
+        p[n][1]=='+'?sum++:sum--;
     }
     cout << sum;
 }
