@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+ 
+using namespace std;
+ 
+int main()
+{
+    int t, a, b, c, n, sum;
+    cin >> t;
+    while(t--){
+        cin >> a >> b >> c >> n;
+        sum = a + b +c;
+        a = max(a,max(b,c));
+        c = min(a,min(b,c));
+        b = sum - a - c;
+        if (n < a-c + a-b){
+            cout << "NO\n";
+        }
+        else{
+            n -= a-b + a-c;
+            n%3==0? cout << "YES\n" : cout << "NO\n";
+        }
+    }
+    return 0;
+}
