@@ -1,2 +1,2 @@
 # Codeforces
-Practicing problem solving on Codeforces.
+Problem solving on Codeforces.
