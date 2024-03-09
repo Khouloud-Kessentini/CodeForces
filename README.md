@@ -1,2 +1,1 @@
-# Codeforces
-Problem solving on Codeforces.
+# Problem solving on Codeforces.
